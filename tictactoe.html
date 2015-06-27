@@ -1,0 +1,57 @@
+
+<html>
+<body>
+
+<div class="board">
+
+<div class="tile"> </div>
+<div class="tile"> </div>
+<div class="tile"> </div>
+<div class="tile"> </div>
+<div class="tile"> </div>
+<div class="tile"> </div>
+<div class="tile"> </div>
+<div class="tile"> </div>
+<div class="tile"> </div>
+
+</div>
+
+
+<style>
+
+.board{
+border-width: 5px;
+border-style: solid;
+border-color: darkviolet;
+width: 306px;
+height: 306px;
+}
+
+.tile{
+border-width: 1px;
+border-style: solid;
+border-color: violet;
+width: 100px;
+height: 100px;
+float: left;
+font-size: 80px;
+text-align: center;
+color: pink;
+}
+
+</style>
+
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+var nextletter="X"
+$(".tile").click(function(event){
+$(event.target).text(nextletter)
+if(nextletter=="X"){nextletter="O"}
+else{nextletter="X"}
+
+})
+</script>
+</body>
+
+</html?
